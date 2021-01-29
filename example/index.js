@@ -1,6 +1,6 @@
-import React, { Component } from "../src/react";
-import ReactDOM from "../src/react-dom";
-import "./index.css";
+import React, { Component } from "../src/react.js";
+import ReactDOM from "../src/react-dom.js";
+// import "./index.css";
 
 // function类型的组件
 function Comp(props) {

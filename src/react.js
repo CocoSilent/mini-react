@@ -1,4 +1,4 @@
-import { createVNode } from "./lib/dom";
+import { createVNode } from "./lib/dom.js";
 //生成虚拟dom
 function createElement(type, props, ...children) {
     props.children = children;
