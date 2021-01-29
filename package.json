@@ -1,0 +1,23 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "description": "a mini react",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CocoSilent/mini-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CocoSilent/mini-react/issues"
+  },
+  "homepage": "https://github.com/CocoSilent/mini-react#readme"
+}
