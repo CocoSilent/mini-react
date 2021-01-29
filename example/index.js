@@ -1,5 +1,5 @@
-import React, { Component } from "../src/index";
-import ReactDOM from "./mReact-dom";
+import React, { Component } from "../src/react";
+import ReactDOM from "../src/react-dom";
 import "./index.css";
 
 // function类型的组件
