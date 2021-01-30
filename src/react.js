@@ -1,6 +1,7 @@
 import { createVNode } from "./lib/dom.js";
 //生成虚拟dom
 function createElement(type, props, ...children) {
+    props = Object.assign({}, props);
     props.children = children;
     delete props.__source;
     delete props.__self;
