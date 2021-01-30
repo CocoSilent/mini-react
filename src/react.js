@@ -17,7 +17,6 @@ function createElement(type, props, ...children) {
             vtype = 3;
         }
     }
-    console.log(vtype, type, props);
     return createVNode(vtype, type, props);
 }
 

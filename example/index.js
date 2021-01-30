@@ -19,14 +19,14 @@ class Comp2 extends Component {
 const users = [{ name: "tom", age: 20 }, { name: "jerry", age: 30 }];
 const jsx = (
     <div id="demo">
-        <span>hi1</span>
-        <span>hi2</span>
+        <input value={users[0].name}></input>
+        <span>hi一级</span>
         <div>
-            <span>hi1</span>
-            <span>hi2</span>
+            <span>hi 二级</span>
+            <span>hi 二级</span>
         </div>
-        <Comp name="functionkaikeba" />
-        <Comp2 name="classkaikeba" />
+        <Comp name=" mini-react-function" />
+        <Comp2 name=" mini-react-function-class" />
         <ul>
             <li>wo--111</li>
             {users.map((item, index) => (
@@ -37,5 +37,6 @@ const jsx = (
         </ul>
     </div>
 );
+
 
 ReactDOM.render(jsx, document.querySelector("#app"));

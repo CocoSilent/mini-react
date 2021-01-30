@@ -1,7 +1,6 @@
 //vdom转换为dom
 //diff
 //vtype元素类型：1-html元素；2-function组件；3-class组件
-// 在mReact中用到返回虚拟dom
 export function createVNode(vtype, type, props) {
     const vnode = { vtype, type, props };
     return vnode;
@@ -10,7 +9,6 @@ export function createVNode(vtype, type, props) {
 //vdom转换为dom
 export function initVNode(vnode) {
     const { vtype } = vnode;
-    console.log(vtype);
     if (!vtype) {
         //文本节点
         return document.createTextNode(vnode);
