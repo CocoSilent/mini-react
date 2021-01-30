@@ -8,10 +8,17 @@ function Comp(props) {
 }
 // class类型组件
 class Comp2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: ' state传值'
+        }
+    }
     render() {
         return (
             <div>
                 <h2>hi{this.props.name}</h2>
+                <h2>hi{this.state.name}</h2>
             </div>
         );
     }
@@ -19,14 +26,16 @@ class Comp2 extends Component {
 const users = [{ name: "tom", age: 20 }, { name: "jerry", age: 30 }];
 const jsx = (
     <div id="demo">
-        <input value={users[0].name}></input>
+        <div>
+            <input value={users[0].name}></input>
+        </div>
         <span>hi一级</span>
         <div>
             <span>hi 二级</span>
             <span>hi 二级</span>
         </div>
         <Comp name=" mini-react-function" />
-        <Comp2 name=" mini-react-function-class" />
+        <Comp2 name=" mini-react-class" />
         <ul>
             <li>wo--111</li>
             {users.map((item, index) => (
