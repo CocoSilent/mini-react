@@ -32,7 +32,7 @@ const jsx = /*#__PURE__*/React.createElement("div", {
   id: "demo"
 }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
   value: users[0].name
-})), /*#__PURE__*/React.createElement("span", null, "hi\u4E00\u7EA7"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"), /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7")), /*#__PURE__*/React.createElement(Comp, {
+})), /*#__PURE__*/React.createElement("span", null, "hi\u4E00\u7EA7"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"), /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"), /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"))), /*#__PURE__*/React.createElement(Comp, {
   name: " mini-react-function"
 }), /*#__PURE__*/React.createElement(Comp2, {
   name: " mini-react-class"

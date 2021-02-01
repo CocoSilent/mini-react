@@ -32,7 +32,7 @@ const jsx = (
         <span>hi一级</span>
         <div>
             <span>hi 二级</span>
-            <span>hi 二级</span>
+            <><span>hi 二级</span><span>hi 二级</span></>
         </div>
         <Comp name=" mini-react-function" />
         <Comp2 name=" mini-react-class" />

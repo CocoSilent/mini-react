@@ -13,6 +13,23 @@ export function initVNode(vnode) {
         //文本节点
         return document.createTextNode(vnode);
     }
+    const { props } = vnode;
+    let { children } = props;
+    let flag = false;
+    for(let i=children.length-1;i>=0;i--) {
+        const c = children[i];
+        if (c.vtype === 4) {
+            flag = true;
+            const splice = children.splice(i,1);
+            splice[0].props.children.forEach(item=>{
+                children.push(item);
+            })
+        }
+    }
+    if (flag) {
+        console.log(vnode);
+    }
+
     if (vtype === 1) {
         //原生元素
         return createElement(vnode);
@@ -49,6 +66,7 @@ function createElement(vnode) {
     });
     return node;
 }
+
 function createClassComp(vnode) {
     //type是class组件的声明
     const { type, props } = vnode;

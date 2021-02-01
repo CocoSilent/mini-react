@@ -1,4 +1,8 @@
 import { createVNode } from "./lib/dom.js";
+
+
+const Fragment = Symbol.for('react.fragment');
+
 //生成虚拟dom
 function createElement(type, props, ...children) {
     props = Object.assign({}, props);
@@ -16,11 +20,13 @@ function createElement(type, props, ...children) {
         } else {
             vtype = 3;
         }
+    } else if (typeof type === 'symbol') {
+        vtype = 4;
     }
     return createVNode(vtype, type, props);
 }
 
-export default { createElement };
+export default { createElement, Fragment };
 
 export class Component {
     //区分组件是function还是class
