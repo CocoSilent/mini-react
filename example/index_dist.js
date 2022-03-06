@@ -29,7 +29,10 @@ const users = [{
   age: 30
 }];
 const jsx = /*#__PURE__*/React.createElement("div", {
-  id: "demo"
+  id: "demo",
+  style: {
+    backgroundColor: 'red'
+  }
 }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
   value: users[0].name
 })), /*#__PURE__*/React.createElement("span", null, "hi\u4E00\u7EA7"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"), /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"), /*#__PURE__*/React.createElement("span", null, "hi \u4E8C\u7EA7"))), /*#__PURE__*/React.createElement(Comp, {

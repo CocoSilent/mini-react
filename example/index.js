@@ -25,7 +25,7 @@ class Comp2 extends Component {
 }
 const users = [{ name: "tom", age: 20 }, { name: "jerry", age: 30 }];
 const jsx = (
-    <div id="demo">
+    <div id="demo" style={{ backgroundColor: 'red' }}>
         <div>
             <input value={users[0].name}></input>
         </div>

@@ -53,6 +53,15 @@ function createElement(vnode) {
             node.setAttribute("class", rest[k]);
         } else if (k === "htmlFor") {
             node.setAttribute("for", rest[k]);
+        } else if (k === "style") {
+            const style = rest[k];
+            if (typeof style === 'string') {
+                node.style.cssText = style;
+            } else {
+                for (const cssName in style) {
+                    node.style[cssName] = style[cssName];
+                }
+            }
         } else {
             node.setAttribute(k, rest[k]);
         }
