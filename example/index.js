@@ -47,5 +47,12 @@ const jsx = (
     </div>
 );
 
+const abc = <div>
+    <>
+        <div>123</div>
+        <div>456</div>
+    </>
+</div>
 
-ReactDOM.render(jsx, document.querySelector("#app"));
+
+ReactDOM.render(abc, document.querySelector("#app"));

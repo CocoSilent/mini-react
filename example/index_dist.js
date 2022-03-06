@@ -42,4 +42,5 @@ const jsx = /*#__PURE__*/React.createElement("div", {
 }), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "wo--111"), users.map((item, index) => /*#__PURE__*/React.createElement("li", {
   key: index
 }, item.name, "--", item.age))));
-ReactDOM.render(jsx, document.querySelector("#app"));
+const abc = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", null, "123"), /*#__PURE__*/React.createElement("div", null, "456")));
+ReactDOM.render(abc, document.querySelector("#app"));
