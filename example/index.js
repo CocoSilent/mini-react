@@ -54,5 +54,10 @@ const abc = <div>
     </>
 </div>
 
+const def = <div>
+        <div>123</div>
+        <div>456</div>
+</div>
 
-ReactDOM.render(abc, document.querySelector("#app"));
+
+ReactDOM.render(def, document.querySelector("#app"));

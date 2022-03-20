@@ -43,4 +43,5 @@ const jsx = /*#__PURE__*/React.createElement("div", {
   key: index
 }, item.name, "--", item.age))));
 const abc = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", null, "123"), /*#__PURE__*/React.createElement("div", null, "456")));
-ReactDOM.render(abc, document.querySelector("#app"));
+const def = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", null, "123"), /*#__PURE__*/React.createElement("div", null, "456"));
+ReactDOM.render(jsx, document.querySelector("#app"));
